@@ -1,0 +1,29 @@
+type Query {
+    getProductYulius(
+        search: String,
+        filter: ProductAttributeFilterInput,
+        sort: ProductAttributeSortInput,
+        pageSize: Int,
+        currentPage: Int
+    ): OutputProductYulius @resolver(class: "Icube\\ExamOmsYulius\\Model\\Resolver\\GetProduct")
+}
+
+type OutputProductYulius {
+    items: [Product]
+    page_info: SearchResultPageInfo
+    total_count: Int
+}
+
+type Product {
+    entity_id: Int
+    sku: String
+    name: String
+    price: Float
+    status: Int
+    description: String
+    short_description: String
+    weight: Float
+    dimension_package_height: Float
+    dimension_package_length: Float
+    dimension_package_width: Float
+}
