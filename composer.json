@@ -1,0 +1,39 @@
+{
+    "name": "yuliushansen12/exam-oms-yuliu-01.git",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "yulius",
+            "email": "yulius.hansen@sirclo.com"
+        }
+    ],
+    "description": "Yulius Exam GraphQl Product",
+    "homepage": "https://github.com/yuliushansen12/exam-oms-yuliu-01.git",
+    "keywords": [
+        "magento",
+        "magento2"
+    ],
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "minimum-stability": "dev",
+    "version": "1.0.0",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/module-exam-oms-yulius/registration.php"
+        ],
+        "psr-4": {
+            "Icube\\ExamOmsYulius\\": "src/module-exam-oms-yulius"
+        }
+    }
+}
